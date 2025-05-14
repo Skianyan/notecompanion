@@ -56,26 +56,26 @@ export default function LandingPage() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Organiza tus ideas, simplifica tu vida
+                    Todas tus ideas, en un solo lugar
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    NoteCompanion te ayuda a capturar ideas, organizar tareas y simplificar tu vida diaria con una
-                    aplicación intuitiva y potente.
+                    NoteCompanion es una aplicación multiplataforma te ayuda a capturar tus ideas, 
+                    organizar tareas o cualquier otra cosa que quisieras anotar de una manera simple y elegante.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Button size="lg" className="px-8">
-                    Comenzar Gratis
+                    Registrarse gratis
                   </Button>
                   <Button size="lg" variant="outline" className="px-8">
-                    Ver Demo
+                    Ver Demo Pro
                   </Button>
                 </div>
               </div>
               <div className="flex items-center justify-center">
                 <div className="relative w-full max-w-sm overflow-hidden rounded-xl border bg-background shadow-xl">
                   <Image
-                    src="/placeholder.svg?height=600&width=400"
+                    src="/notecompanion.png"
                     width={400}
                     height={600}
                     alt="NoteCompanion App Screenshot"
@@ -94,7 +94,7 @@ export default function LandingPage() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Características Principales</h2>
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                  Descubre por qué miles de personas confían en NoteCompanion para organizar sus vidas.
+                  Descubre las funciones principales por las que la gente decide utilizar NoteCompanion.
                 </p>
               </div>
             </div>
@@ -107,8 +107,8 @@ export default function LandingPage() {
                   <div className="space-y-2">
                     <h3 className="font-bold">Notas Intuitivas</h3>
                     <p className="text-muted-foreground">
-                      Crea, edita y organiza notas con una interfaz limpia y fácil de usar. Añade imágenes, listas y
-                      más.
+                      Crea, edita y organiza notas con una interfaz limpia y fácil de usar. Añade imágenes, listas, 
+                      cambia formatos de texto y más.
                     </p>
                   </div>
                 </div>
@@ -119,7 +119,7 @@ export default function LandingPage() {
                   <div className="space-y-2">
                     <h3 className="font-bold">Listas de Tareas</h3>
                     <p className="text-muted-foreground">
-                      Gestiona tus tareas pendientes con listas interactivas. Establece fechas límite y prioridades.
+                      Crea listas To-do para tus pendientes, establece prioridades y fechas limite.
                     </p>
                   </div>
                 </div>
@@ -132,7 +132,7 @@ export default function LandingPage() {
                   <div className="space-y-2">
                     <h3 className="font-bold">Recordatorios</h3>
                     <p className="text-muted-foreground">
-                      Nunca olvides una tarea importante con nuestro sistema de recordatorios y notificaciones.
+                      Implementa recordatorios y notificaciones, nunca te pierdas de una tarea imporante!
                     </p>
                   </div>
                 </div>
@@ -184,7 +184,7 @@ export default function LandingPage() {
                   </div>
                   <div className="mt-6 flex items-center gap-4">
                     <Image
-                      src={`/placeholder.svg?height=40&width=40&text=${testimonial.name.charAt(0)}`}
+                      src={testimonial.image}
                       width={40}
                       height={40}
                       alt={testimonial.name}
@@ -256,17 +256,17 @@ export default function LandingPage() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                  Comienza a Organizar Tu Vida Hoy
+                  Comienza a Organizar Tus Ideas Hoy!
                 </h2>
                 <p className="mx-auto max-w-[700px] md:text-xl">
-                  Únete a miles de usuarios satisfechos y transforma tu productividad con NoteCompanion.
+                  Únete a miles de usuarios satisfechos y aumenta tu productividad con NoteCompanion.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Button size="lg" variant="secondary" className="px-8">
                   Comenzar Gratis
                 </Button>
-                <Button size="lg" variant="outline" className="border-primary-foreground px-8">
+                <Button size="lg" variant="secondary" className="px-8">
                   Contactar Ventas
                 </Button>
               </div>
@@ -285,7 +285,13 @@ export default function LandingPage() {
                 <span className="text-xl font-bold">NoteCompanion</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Organiza tus ideas, simplifica tu vida con la aplicación de notas y tareas más intuitiva.
+                Todas tus ideas, en un solo lugar.
+                <br />
+                <br />
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Queja y sugerencias a: 
+                notecompanionbox@gmail.com
               </p>
             </div>
             <div className="space-y-4">
@@ -396,22 +402,25 @@ export default function LandingPage() {
 // Datos de ejemplo para testimonios
 const testimonials = [
   {
-    name: "María García",
-    role: "Diseñadora Gráfica",
-    text: "NoteCompanion ha transformado mi flujo de trabajo. Ahora puedo organizar todas mis ideas creativas y tareas en un solo lugar.",
+    name: "Vicente Salsa",
+    role: "Jefe de Departamento",
+    text: "NoteCompanion ha transformado mi flujo de trabajo. Ahora puedo organizar todos mis pendientes en un solo lugar, los recordatorios aseguran de que nunca se me pase una tarea importante!",
     rating: 5,
+    image: "vinny.png"
   },
   {
-    name: "Carlos Rodríguez",
+    name: "Joel Johann",
     role: "Emprendedor",
-    text: "Como emprendedor, tengo mil cosas en la cabeza. NoteCompanion me ayuda a mantenerme organizado y no olvidar nada importante.",
+    text: "Como emprendedor, tengo muchas tareas que puedo hacer en cada momento. NoteCompanion me ayuda a mantenerme organizado y no olvidar nada importante.",
     rating: 5,
+    image: "joel.png"
   },
   {
-    name: "Laura Martínez",
+    name: "German Alberto",
     role: "Estudiante",
-    text: "Uso NoteCompanion para organizar mis estudios y trabajos. La función de recordatorios es especialmente útil para no perder fechas de entrega.",
+    text: "Uso NoteCompanion para organizar mis tareas y trabajos pendientes a entregar. La función de recordatorios es increiblemente util para no pasarme las fechas de entrega.",
     rating: 4,
+    image: "jerman.png"
   },
 ]
 
@@ -428,15 +437,15 @@ const pricingPlans = [
   {
     name: "Pro",
     description: "Para profesionales",
-    price: "€9.99",
+    price: "$4.99",
     features: [
       "Notas ilimitadas",
       "Listas de tareas ilimitadas",
-      "Sincronización en todos los dispositivos",
-      "Colaboración con 5 personas",
-      "Soporte prioritario",
+      "Sincronización en cualquier dispositivo",
+      "Colaboración con hasta 5 personas",
+      "Prioridad de soporte",
     ],
-    buttonText: "Comenzar Prueba Gratuita",
+    buttonText: "Comenzar Prueba de 30 días",
     featured: true,
   },
   {

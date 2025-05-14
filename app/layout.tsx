@@ -7,9 +7,10 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "NoteKeeper - Organiza tus ideas, simplifica tu vida",
+  title: "NoteCompanion - Todas tus ideas, en un solo lugar",
   description:
-    "NoteKeeper es una aplicación de notas y tareas pendientes que te ayuda a organizar tus ideas y simplificar tu vida diaria.",
+    "NoteCompanion es una aplicación multiplataforma diseñada para la gestión eficiente de notas.",
+    // se utilizo v0 para generar el landing xd
     generator: 'v0.dev'
 }
 
